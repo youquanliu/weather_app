@@ -2,7 +2,7 @@
 
 > Build a React Weather App Implemented OpenWeather API
 
-![Page One](frontend/public/screen.png?raw=true "look")
+![Page One](./weather_app/public/screen.png?raw=true "look")
 
 
 

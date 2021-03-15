@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import DisplayWeather from "./DisplayWeather";
+import DisplayWeather from "./DisplayWeather";
 //import "./weather.css";
 
 function Weather() {
@@ -22,7 +22,7 @@ function Weather() {
                 .then((data) => data);
 
             setWeather({ data: data });
-            console.log(data)
+            console.table(data)
         }
     }
     const handleChange = (e) => {
@@ -38,7 +38,7 @@ function Weather() {
     };
     return (
         <div className="weather">
-            <span className="title">Weather App</span>
+            <span className="title">Frank Liu's Weather App</span>
             <br />
             <form>
                 <input
@@ -59,10 +59,9 @@ function Weather() {
         </button>
             </form>
 
-            {/* {console.log(weather)} */}
             {weather.data !== undefined ? (
                 <div>
-                    {/* <DisplayWeather data={weather.data} /> */}
+                    <DisplayWeather data={weather.data} />
                 </div>
             ) : null}
         </div>
